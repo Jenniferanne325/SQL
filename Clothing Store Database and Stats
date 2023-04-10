@@ -1,0 +1,22 @@
+CREATE TABLE jens_clothing_store (id INTEGER PRIMARY KEY, name TEXT, price INTEGER, aisle INTEGER, size TEXT);
+INSERT INTO jens_clothing_store VALUES (1, "shirt", 10, 5, "medium");
+INSERT INTO jens_clothing_store VALUES (2, "shirt", 10, 5, "large");
+INSERT INTO jens_clothing_store VALUES (3, "shirt", 10, 5, "extra large");
+INSERT INTO jens_clothing_store VALUES (4, "pants", 15, 4, "small");
+INSERT INTO jens_clothing_store VALUES (5, "pants", 15, 4, "large");
+INSERT INTO jens_clothing_store VALUES (6, "underwear", 8, 3, "small");
+INSERT INTO jens_clothing_store VALUES (7, "underwear", 8, 3, "medium");
+INSERT INTO jens_clothing_store VALUES (8, "underwear", 8, 3, "large");
+INSERT INTO jens_clothing_store VALUES (9, "bras", 12, 2, "small");
+INSERT INTO jens_clothing_store VALUES (10, "bras", 12, 2, "medium");
+INSERT INTO jens_clothing_store VALUES (11, "bras", 12, 2, "large");
+INSERT INTO jens_clothing_store VALUES (12, "dresses", 20, 1, "small");
+INSERT INTO jens_clothing_store VALUES (13, "dresses", 20, 1, "medium");
+INSERT INTO jens_clothing_store VALUES (14, "dresses", 20, 1, "large");
+INSERT INTO jens_clothing_store VALUES (15, "socks", 4, 1, "small");
+
+SELECT * FROM jens_clothing_store ORDER BY price;
+SELECT aisle, SUM(price) FROM jens_clothing_store GROUP BY aisle;
+
+
+
